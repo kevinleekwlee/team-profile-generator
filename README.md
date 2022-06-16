@@ -17,7 +17,7 @@ Through the terminal, initialize the application using the following:
 node index.js
 ```
 
-Video demo: 
+Video demo: https://drive.google.com/file/d/1TkofIp31gcwGPbgjmnDJfxvLRCppt7XU/view?usp=sharing
 
 Below is a screenshot of the website. 
 
