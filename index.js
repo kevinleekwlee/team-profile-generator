@@ -1,5 +1,9 @@
+// Requiring the dependencies of this application.
+
 const inquirer = require('inquirer');
 const fs = require('fs');
+
+// List of prompts for the user in the command line that will then be generated into the HTML. 
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -66,6 +70,8 @@ const promptUser = () => {
     ]);
 };
 
+// The content that will be generated into the HTML including template literals that will be populated with the user inputs. 
+
 const generateHTML = ({managername, managerid, manageremail, managernumber, engineername, engineerid, engineeremail, engineergithub, internname, internid, internemail, internschool}) =>
 `<!DOCTYPE html>
 <html lang="en">
@@ -113,6 +119,8 @@ const generateHTML = ({managername, managerid, manageremail, managernumber, engi
 </body>
 </html>
 `;
+
+// The starting function that begins the application and applies the prompt answers to the generate HTML process. 
 
 const init = () => {
     promptUser()
